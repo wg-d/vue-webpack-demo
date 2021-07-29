@@ -3,6 +3,7 @@
         <table class="table">
             <thead>
                 <tr>
+                    <th scope="col">User Id</th>
                     <th scope="col">Id</th>
                     <th scope="col">Title</th>
                     <th scope="col">Body</th>
@@ -10,7 +11,8 @@
             </thead>
             <tbody>
                 <tr v-for="post in posts" :key="post.id">
-                    <th scope="row">{{ post.id }}</th>
+                    <td>{{ post.userId }}</td>
+                    <td>{{ post.id }}</td>
                     <td>{{ post.title }}</td>
                     <td>{{ post.body }}</td>
                 </tr>
@@ -21,19 +23,19 @@
 
 <script>
 
+import axios from 'axios'
+
 export default({
    name: 'PostsExample',
    data() {
        return {
-           posts: [
-               { id: 1, title: 'Post1', body: 'This is the cool post' },
-               { id: 2, title: 'Post2', body: 'This is the cool post' },
-               { id: 3, title: 'Post3', body: 'This is the cool post' },
-               { id: 4, title: 'Post4', body: 'This is the cool post' },
-               { id: 5, title: 'Post5', body: 'This is the cool post' },
-               { id: 6, title: 'Post6', body: 'This is the cool post' },
-           ]
+           posts: []
        }
+    },
+    created() {
+        axios.get('https://jsonplaceholder.typicode.com/posts').then( posts => {
+            this.posts = posts.data;
+        })
     }
 })
 </script>
