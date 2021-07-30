@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "bootstrap": "^5.0.2",
+    "fake-git-history": "^1.7.0",
     "vue": "^2.5.2",
     "vue-router": "^3.5.2"
   },
