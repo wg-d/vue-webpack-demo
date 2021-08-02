@@ -5,6 +5,7 @@ import App from './App'
 import VueRouter from 'vue-router'
 import Posts from './components/Posts.vue'
 import Contact from './components/Contact.vue'
+import HelloWorld from './components/HelloWorld.vue'
 
 
 Vue.config.productionTip = false
@@ -16,6 +17,9 @@ const routes = [
   },
   {
     path:'/contact', component: Contact,
+  },
+  {
+    path:'/dashboard', component: HelloWorld,
   }
 ]
 /* eslint-disable no-new */
