@@ -55,7 +55,8 @@ export default({
     .carousel__item {
         width: 200px;
         padding:20px;
-        box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+        margin: 20px;
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
