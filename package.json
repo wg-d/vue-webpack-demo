@@ -14,6 +14,7 @@
     "bootstrap": "^5.0.2",
     "fake-git-history": "^1.7.0",
     "vue": "^2.5.2",
+    "vue-carousel": "^0.18.0",
     "vue-router": "^3.5.2"
   },
   "devDependencies": {

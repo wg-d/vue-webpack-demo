@@ -6,11 +6,12 @@ import VueRouter from 'vue-router'
 import Posts from './components/Posts.vue'
 import Contact from './components/Contact.vue'
 import HelloWorld from './components/HelloWorld.vue'
+import VueCarousel from 'vue-carousel';
 
-
-Vue.config.productionTip = false
-
+Vue.config.productionTip = false;
+Vue.use(VueCarousel);
 Vue.use(VueRouter);
+
 const routes = [
   {
     path:'/', component: Posts,

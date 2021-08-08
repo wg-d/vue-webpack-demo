@@ -1,41 +1,69 @@
 <template>
-    <div>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">User Id</th>
-                    <th scope="col">Id</th>
-                    <th scope="col">Title</th>
-                    <th scope="col">Body</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr v-for="post in posts" :key="post.id">
-                    <td>{{ post.userId }}</td>
-                    <td>{{ post.id }}</td>
-                    <td>{{ post.title }}</td>
-                    <td>{{ post.body }}</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <carousel>
+    <slide class="carousel__item">
+        <h1>Slider1</h1>
+        <img src="../assets/carousel-img-1.png" />
+        <i>I do love coding.</i>
+    </slide>
+    <slide class="carousel__item">
+        <h1>Slider2</h1>
+        <img src="../assets/carousel-img-2.jpg" />
+        <i>I do love coding.</i>
+    </slide>
+    <slide class="carousel__item">
+        <h1>Slider3</h1>
+        <img src="../assets/carousel-img-3.png" />
+        <i>I do love coding.</i>
+    </slide>
+    <slide class="carousel__item">
+        <h1>Slider4</h1>
+        <img src="../assets/carousel-img-4.jpg" />
+        <i>I do love coding.</i>
+    </slide>
+    <slide class="carousel__item">
+        <h1>Slider5</h1>
+        <img src="../assets/carousel-img-5.jpg" />
+        <i>I do love coding.</i>
+    </slide>
+    </carousel>
 </template>
 
 <script>
 
 import axios from 'axios'
+import { Carousel, Slide } from 'vue-carousel'
 
 export default({
    name: 'PostsExample',
    data() {
        return {
-           posts: []
+           posts: [],
        }
     },
     created() {
         axios.get('https://jsonplaceholder.typicode.com/posts').then( posts => {
             this.posts = posts.data;
         })
-    }
+    },
+    components:{
+    Carousel,
+    Slide
+  }
 })
 </script>
+<style scoped>
+    .carousel__item {
+        width: 200px;
+        padding:20px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .carousel__item>img{
+        width: 100%;
+    }
+    .carousel__item>i{
+        vertical-align: bottom;
+    }
+</style>
