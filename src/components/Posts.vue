@@ -30,26 +30,26 @@
 
 <script>
 
-import axios from 'axios'
-import { Carousel, Slide } from 'vue-carousel'
+    import axios from 'axios'
+    import { Carousel, Slide } from 'vue-carousel'
 
-export default({
-   name: 'PostsExample',
-   data() {
-       return {
-           posts: [],
-       }
-    },
-    created() {
-        axios.get('https://jsonplaceholder.typicode.com/posts').then( posts => {
-            this.posts = posts.data;
-        })
-    },
-    components:{
-    Carousel,
-    Slide
-  }
-})
+    export default({
+    name: 'PostsExample',
+    data() {
+        return {
+            posts: [],
+        }
+        },
+        created() {
+            axios.get('https://jsonplaceholder.typicode.com/posts').then( posts => {
+                this.posts = posts.data;
+            })
+        },
+        components:{
+        Carousel,
+        Slide
+    }
+    })
 </script>
 <style scoped>
     .carousel__item {

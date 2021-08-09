@@ -23,6 +23,7 @@
     </div>
     </nav>
     <router-view></router-view>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -30,13 +31,15 @@
 import HelloWorld from './components/HelloWorld'
 import PostsExample from './components/Posts.vue'
 import Contact from './components/Contact.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
     PostsExample,
-    Contact
+    Contact,
+    Footer
   }
 }
 </script>
