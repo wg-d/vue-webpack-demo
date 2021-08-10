@@ -54,67 +54,67 @@
 
 <style scoped>
     * {
-    box-sizing:border-box;
+        box-sizing:border-box;
     }
 
     body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     .container {
-    padding: 64px;
+        padding: 64px;
     }
 
     .row:after {
-    content: "";
-    display: table;
-    clear: both
+        content: "";
+        display: table;
+        clear: both
     }
 
     .column-66 {
-    float: left;
-    width: 66.66666%;
-    padding: 20px;
+        float: left;
+        width: 66.66666%;
+        padding: 20px;
     }
 
     .column-33 {
-    float: left;
-    width: 33.33333%;
-    padding: 20px;
+        float: left;
+        width: 33.33333%;
+        padding: 20px;
     }
 
     .large-font {
-    font-size: 48px;
+        font-size: 48px;
     }
 
     .xlarge-font {
-    font-size: 64px
+        font-size: 64px
     }
 
     .button {
-    border: none;
-    color: white;
-    padding: 14px 28px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #04AA6D;
+        border: none;
+        color: white;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #04AA6D;
     }
 
     img {
-    display: block;
-    height: auto;
-    max-width: 100%;
+        display: block;
+        height: auto;
+        max-width: 100%;
     }
 
     @media screen and (max-width: 1000px) {
-    .column-66,
-    .column-33 {
-        width: 100%;
-        text-align: center;
-    }
-    img {
-        margin: auto;
-    }
+        .column-66,
+        .column-33 {
+            width: 100%;
+            text-align: center;
+        }
+        img {
+            margin: auto;
+        }
     }
 </style>

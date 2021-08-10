@@ -14,6 +14,7 @@ import Footer from './components/Footer.vue'
 import Header from './components/Header.vue'
 import Login from './components/Login.vue'
 import Signup from './components/Signup.vue'
+import Blog from './components/Blog.vue'
 
 export default {
   name: 'App',
@@ -24,13 +25,13 @@ export default {
     Header,
     Footer,
     Login,
-    Signup
+    Signup,
+    Blog
   }
 }
 </script>
 
 <style>
-
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 #app {
