@@ -12,6 +12,8 @@ import PostsExample from './components/Posts.vue'
 import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
 import Header from './components/Header.vue'
+import Login from './components/Login.vue'
+import Signup from './components/Signup.vue'
 
 export default {
   name: 'App',
@@ -20,7 +22,9 @@ export default {
     PostsExample,
     Contact,
     Header,
-    Footer
+    Footer,
+    Login,
+    Signup
   }
 }
 </script>

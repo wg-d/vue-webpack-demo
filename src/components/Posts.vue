@@ -1,31 +1,33 @@
 <template>
-    <carousel>
-    <slide class="carousel__item">
-        <h1>Slider1</h1>
-        <img src="../assets/carousel-img-1.png" />
-        <i>I do love coding.</i>
-    </slide>
-    <slide class="carousel__item">
-        <h1>Slider2</h1>
-        <img src="../assets/carousel-img-2.jpg" />
-        <i>I do love coding.</i>
-    </slide>
-    <slide class="carousel__item">
-        <h1>Slider3</h1>
-        <img src="../assets/carousel-img-3.png" />
-        <i>I do love coding.</i>
-    </slide>
-    <slide class="carousel__item">
-        <h1>Slider4</h1>
-        <img src="../assets/carousel-img-4.jpg" />
-        <i>I do love coding.</i>
-    </slide>
-    <slide class="carousel__item">
-        <h1>Slider5</h1>
-        <img src="../assets/carousel-img-5.jpg" />
-        <i>I do love coding.</i>
-    </slide>
-    </carousel>
+    <div class="d-flex justify-content-center">
+        <carousel class="w-100">
+            <slide class="carousel__item">
+                <h1>Slider1</h1>
+                <img src="../assets/carousel-img-1.png" />
+                <i>I do love coding.</i>
+            </slide>
+            <slide class="carousel__item">
+                <h1>Slider2</h1>
+                <img src="../assets/carousel-img-2.jpg" />
+                <i>I do love coding.</i>
+            </slide>
+            <slide class="carousel__item">
+                <h1>Slider3</h1>
+                <img src="../assets/carousel-img-3.png" />
+                <i>I do love coding.</i>
+            </slide>
+            <slide class="carousel__item">
+                <h1>Slider4</h1>
+                <img src="../assets/carousel-img-4.jpg" />
+                <i>I do love coding.</i>
+            </slide>
+            <slide class="carousel__item">
+                <h1>Slider5</h1>
+                <img src="../assets/carousel-img-5.jpg" />
+                <i>I do love coding.</i>
+            </slide>
+        </carousel>
+    </div>
 </template>
 
 <script>
@@ -53,7 +55,7 @@
 </script>
 <style scoped>
     .carousel__item {
-        width: 200px;
+        width: 200px !important;
         padding:20px;
         margin: 20px;
         box-shadow: 0px 0px 20px rgba(0,0,0,0.3);

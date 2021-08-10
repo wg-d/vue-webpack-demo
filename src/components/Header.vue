@@ -16,7 +16,7 @@
                     <router-link class="nav-link text-white" :to='"/contact"'>My Account</router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link class="nav-link text-white" :to='"/contact"'>Login</router-link>
+                    <router-link class="nav-link text-white" :to='"/login"'>Login</router-link>
                 </li>
             </ul>
         </div>

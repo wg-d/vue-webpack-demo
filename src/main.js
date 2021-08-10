@@ -7,6 +7,8 @@ import Posts from './components/Posts.vue'
 import Contact from './components/Contact.vue'
 import HelloWorld from './components/HelloWorld.vue'
 import VueCarousel from 'vue-carousel';
+import Login from './components/Login.vue';
+import Signup from './components/Signup.vue';
 
 Vue.config.productionTip = false;
 Vue.use(VueCarousel);
@@ -21,6 +23,12 @@ const routes = [
   },
   {
     path:'/dashboard', component: HelloWorld,
+  },
+  {
+    path:'/login', component: Login,
+  },
+  {
+    path:'/signup', component: Signup,
   }
 ]
 /* eslint-disable no-new */
