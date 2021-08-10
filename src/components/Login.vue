@@ -1,7 +1,7 @@
 <template>
     <form action="" method="post">
     <div class="imgcontainer">
-        <img src="img_avatar2.png" alt="Avatar" class="avatar">
+         <img src="../assets/carousel-img-3.png" width="100" height="100"/>
     </div>
 
     <div class="container">

@@ -9,6 +9,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import VueCarousel from 'vue-carousel';
 import Login from './components/Login.vue';
 import Signup from './components/Signup.vue';
+import Blog from './components/Blog.vue';
 
 Vue.config.productionTip = false;
 Vue.use(VueCarousel);
@@ -29,6 +30,9 @@ const routes = [
   },
   {
     path:'/signup', component: Signup,
+  },
+  {
+    path:'/blog', component: Blog,
   }
 ]
 /* eslint-disable no-new */
