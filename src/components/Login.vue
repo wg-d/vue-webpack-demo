@@ -15,6 +15,10 @@
         <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
+        <router-link class="nav-link text-white" :to='"/signup"'>
+            <button>Sign Up</button>
+        </router-link>
+        
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
